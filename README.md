@@ -25,3 +25,12 @@ npm run dev
 npm test
 npm run build
 ```
+
+## Deploy with Docker / Portainer
+
+```bash
+docker compose up -d --build
+```
+
+The app will be served on port `8088` (`http://<server-ip>:8088`), ready to be placed behind Nginx Proxy Manager, Caddy, Traefik, or Cloudflare Tunnel.
+

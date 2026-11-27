@@ -1,0 +1,7 @@
+services:
+  otdr-studio:
+    build: .
+    container_name: otdr-studio
+    restart: unless-stopped
+    ports:
+      - "8088:80"
